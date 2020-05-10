@@ -19,7 +19,7 @@ Nesse projeto é consumido um api de quartos com a seguinte estrutura:
 
 ]
 
-<img src='./imagens/site-airbnb-acg.png'>
+<img src='https://github.com/goncalves-ac/Desafio-Airbnb/blob/master/imagens/site-airbnb-acg.PNG'>
 
 ## Site
 
