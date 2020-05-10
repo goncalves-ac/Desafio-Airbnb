@@ -67,15 +67,6 @@ $(document).ready(function() {
                 divTudo.style = "display:flex; justify-content: space-around; text-align: center; align-items: center;"
                 divPai.style = "width: 50%; "
 
-                /*
-                let titulolocal = `<h2 class="titulo-local">${json[data]['name']}</h2>`;
-                let localLocal  = `<h5 class="local-local">${json[data]['property_type']}</h5>`;
-                let precoLocal  = `<h3 class="preco-local"> R$ ${json[data]['price'].toFixed(2).replace('.',',')} á diária.</h3>`;
-                let dataCheckIn = `<h3 class="preco-local"> Check-in: ${(params.dataIn).substr(0, 10).split('-').reverse().join('/')} <h3>`
-                let precoTotal  = `<h3 class="preco-local"> Total a pagar por ${params.hospedagem} dias: R$ ${(json[data]['price'] * params.hospedagem).toFixed(2).replace('.',',')}</h3>`;
-                let porPessoa = `<h5 class="porPessoa"> R$ ${((json[data]['price'] * params.hospedagem)/params.Hospedes).toFixed(2).replace('.',',')} por pessoa.</h5>`;
-                */
-
                 let diaEntrada = `${params.dataIn.substr(0, 10).split('-').reverse().join('/')}`;
                 let diaSaida = `${params.dataOut.substr(0, 10).split('-').reverse().join('/')}`;
                 let totalDias = diffData(diaEntrada,diaSaida);
@@ -89,9 +80,7 @@ $(document).ready(function() {
                     <h5 class="porPessoa"> Total a pagar por ${totalDias} dias: R$ ${(json[data]['price'] * totalDias).toFixed(2).replace('.',',')}</h5>
                     <h5 class="porPessoa"> R$ ${((json[data]['price'] * totalDias)/params.Hospedes).toFixed(2).replace('.',',')} por pessoa.</h5>
                 `
-                /*
-                let localFoto   = `<img src= ${json[data]['photo']}>`;
-                */
+                
                 let hr = `<hr class="hr2">`
 
                 divPai.innerHTML = `
@@ -107,7 +96,6 @@ $(document).ready(function() {
 
 
                 $('.dadosLocal').append(divTudo, hr);
-                //$('.fotoLocal').append(localFoto);
 
                 i += 1;
             }
