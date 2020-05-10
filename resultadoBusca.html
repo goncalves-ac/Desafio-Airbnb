@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Airbnb |</title>
+    <link rel="icon" href="./imagens/icon-airbnb.png" type="imagem/png">
+    <!-- Código que carrega arquivos CSS -->
+    <link rel="stylesheet" href="./estilos.css">
+    <!-- Código que carrega arquivos CSS MapBox -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+    <div class='corpo-container'>
+        <div class='navBar'>
+            <div class="navBar-logo">
+                <div><a href="#"><img src='./imagens/airbnb1-branco.png' ></a></div>
+                <div><a href="#"></a><img src='./imagens/airbnb-branco.png'></a></div>
+            </div>
+            <div class="navBar-indice">
+                <div><a class="link-menu" href='index.html'>HOME</a></div>
+                <div><a class="link-menu" href='https://www.airbnb.com.br/host/homes' target="_blank">HÓSPEDE EM SUA ACOMODAÇÃO</a></div>
+                <div><a class="link-menu" href='https://www.airbnb.com.br/d/onlinehost' target="_blank">HÓSPEDE UMA EXPERIÊNCIA</a></div>
+                <div><a class="link-menu" href='https://www.airbnb.com.br/' target="_blank">SITE OFICIAL</a></div>
+                <div><a class="link-menu" href='sobre-autora.html' target="_blank">SOBRE AUTORA</a></div>
+            </div>
+        </div>
+        
+        <div class="resultadoDaBusca">
+
+            <div class="dadosLocal">
+                <!--
+                    <h3 class="titulo-local"></h3>
+                    <h5 class="local-local"></h5>
+                    <h4 class="preco-local"></h4>
+                -->
+            </div>
+
+        </div>   
+        
+        <div class="mapBox">
+            <div id="map"></div>
+        </div>
+        
+
+        <div class="pos-rodape">
+            <div class="pos-rodape-redes-socias">
+                <a href="https://www.facebook.com/AirbnbBrasil" target="_blank"><img src="./imagens/face-airbnb.png"></a>
+                <a href="https://www.instagram.com/airbnb/" target="_blank"><img src="./imagens/insta-airbnb.png"></a>
+                <a href="https://twitter.com/airbnb_br" target="_blank"><img src="./imagens/twitter-airbnb.png"></a>
+            </div>
+            <div class="acg">
+                <div>
+                    <p class="autora">ANA CAROLINA GONÇALVES</p>
+                </div>
+                <div class='feito-por'>
+                    <a href="https://www.instagram.com/acg.acgoncalves/" target="_blank"><img src="./imagens/insta-acg.png"></a>
+                    <a href="https://twitter.com/acg_goncalves" target="_blank"><img src="./imagens/twitter-acg.png"></a>
+                    <a href="https://www.linkedin.com/in/anacarolinagon%C3%A7alves/" target="_blank"><img src="./imagens/linkedIn-acg.png"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5531993822836" target="_blank"><img src="./imagens/whats-acg.png"></a>
+                    <a href="https://github.com/goncalves-ac" target="_blank"><img src="./imagens/github-acg.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- Código que carrega arquivos JQuery -->
+    <script src="jquery.js"></script>
+    <!-- Código que carrega arquivos JavaScript -->
+    <script src = "vanilla.js"> </script>
+    <script src="./scripts.js"></script>
+    <!-- Código que carrega arquivos MapBox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+</body>
+</html>

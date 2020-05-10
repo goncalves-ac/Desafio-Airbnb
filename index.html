@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Airbnb |</title>
+    <link rel="icon" href="./imagens/icon-airbnb.png" type="imagem/png">
+    <!-- Código que carrega arquivos CSS Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Código que carrega arquivos CSS -->
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Código que carrega arquivos CSS MapBox -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+    <div class='corpo-container'>
+        <nav class="navbar navbar-expand-lg navbar-light navBar">
+            <a class="navbar-brand navBar-logo" href="#">
+                <img id="esconde" src='./imagens/airbnb1-branco.png'>
+                <img src='./imagens/airbnb-branco.png'>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav navBar-indice">
+                <a class="nav-item  active link-menu" href="#">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-item link-menu" href="https://www.airbnb.com.br/host/homes" target="_blank">HÓSPEDE EM SUA ACOMODAÇÃO</a>
+                <a class="nav-item link-menu" href="https://www.airbnb.com.br/d/onlinehost" target="_blank">HÓSPEDE UMA EXPERIÊNCIA</a>
+                <a class="nav-item disabled link-menu" href="https://www.airbnb.com.br/" tabindex="-1" aria-disabled="true" target="_blank">SITE OFICIAL</a>
+                <a class="nav-item disabled link-menu" href="sobre-autora.html" tabindex="-1" aria-disabled="true" target="_blank">SOBRE AUTORA</a>
+              </div>
+            </div>
+        </nav>
+        <div class='busca-form'>
+            <form action="resultadoBusca.html">
+                    <div class="dados-form">
+                        <div>
+                            <label for="inputLocal">Local:</label><br>
+                            <select id="inputLocal" name="selecao">
+                                <option value=" ">Opções</option>
+                                <option value="Apartamento">Apartamento</option>
+                                <option value="Casa">Casa</option>
+                                <option value="Chácara">Chácara</option>
+                                <option value="Estúdio">Estúdio</option>
+                                <option value="Loft">Loft</option>
+                                <option value="Quarto">Quarto</option>
+                                <option value="Sítio">Sítio</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="inputCheckIn">Check-in:</label><br>
+                            <input class="input-form inputCheck" type="date" id="inputCheckIn" name='dataIn' required='required'>
+                        </div>
+                        <div>
+                            <label for="inputHospedagem">Checkout:</label><br>
+                            <input class="input-form inputCheck" type="date" id="inputCheckout" name='dataOut' required='required'>
+                        </div>
+                        <div>
+                            <label for="inputHospedes">Hóspedes:</label><br>
+                            <input class="input-form" type="number" id="inputHospedes" name='Hospedes' size='30' required='required' placeholder="Insira número de hóspedes.">
+                        </div>
+                        <div class="botao-busca">
+                            <button type="submit"  value='Buscar' id='inputBusca' class='Button'>Buscar</button>
+                        </div>
+                </div>
+            </form>
+        </div>
+        <div class='msg'><h1>Podemos estar afastados, mas vamos superar isso juntos.</h1></div>
+        <div class='reportagem'>
+            <div class="reportagem-box">
+                <img src="./imagens/experiencias-online.png" class="imagem-reportagem">
+                <h3 class='titulo-repor-1'><a href="https://www.airbnb.com.br/s/experiences/online" target="_blank">Experiências Online</a></h3>
+                <p class='texto-repor'>As atividades únicas que podemos fazer juntos, oferecidas por anfitriões de todo o mundo.</p>
+            </div>
+            <div class="reportagem-box">
+                <img src="./imagens/estadias-longas.png" class="imagem-reportagem">
+                <h3 class='titulo-repor-2'><a href="https://www.airbnb.com.br/s/homes?refinement_paths%5B%5D=%2Fhomes%2Fsection%2FNEARBY_LONG_TERM_STAY_LISTINGS&search_type=section_navigation" target="_blank">Estadas Longas em Guatapará</a></h3>
+                <p class='texto-repor'>Sinta-se em casa no Airbnb com estadias de um mês ou mais.</p>
+            </div>
+            <div class="reportagem-box">
+                <img src="./imagens/informacoes-atualizadas.png" class="imagem-reportagem">
+                <h3 class='titulo-repor-3'><a href="https://www.airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34" target="_blank">Informações Atualizadas | COVID-19</a></h3>
+                <p class='texto-repor'>Saiba mais sobre as ações que estamos tomando em relação à COVID-19.</p>
+            </div>
+        </div>
+        <div class='experiencias-online'>
+            <div>
+                <h3 class="titulo-experiencias-online">Apresentamos as experiências on-line</h3>
+                <p class="texto-experiencias-online">Agora você pode conhecer pessoas do mundo inteiro enquanto 
+                    experimenta algo novo. Participe de sessões de vídeo interativas ao vivo oferecidas por 
+                    anfitriões especialistas — tudo isso sem sair de casa.</p>
+            </div>
+            <div class="botao-explorar">
+                <button type="submit"  value='Explorar' id='inputBusca' class='Button'>
+                    <a href="https://www.airbnb.com.br/s/experiences?click_referer=t%3ASEE_ALL%7Csid%3A69cf8250-306e-4836-adac-ba06734fb3c8&refinement_paths%5B%5D=%2Fexperiences%2FKG%2FTag%3A6951&last_search_session_id=69cf8250-306e-4836-adac-ba06734fb3c8&search_type=unknown" target="_blank"> Explorar Tudo. </a>
+                </button>
+            </div>
+        </div>
+        <div class='fique-dentro'>
+            <h2>Fique por Dentro</h2>
+        </div>
+        <div class='pre-rodape'>
+            <div class='fique-dentro'>
+                <h3>PARA HÓSPEDES</h3>
+                <hr>
+                <a href="https://www.airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34" target="_blank">
+                    Atualizações sobre viagens <br>
+                    <span class="subtitulo">O que você deve saber</span>
+                </a>
+                <hr>
+                <a href="https://www.airbnb.com.br/help/article/2701/a-pol%C3%ADtica-de-causas-de-for%C3%A7a-maior-e-o-coronav%C3%ADrus-covid19" target="_blank">
+                    Opções de Cancelamento <br>
+                    <span class="subtitulo">Saiba o que está coberto</span>
+                </a>
+                <hr>
+                <a href="https://www.airbnb.com.br/help/home" target="_blank">
+                    Central de Ajuda <br>
+                    <span class="subtitulo">Ajuda</span>
+                </a>
+            </div>
+            <div class='fique-dentro'>
+                <h3>PARA ANFITRIÕES</h3>
+                <hr>
+                <a href="https://www.airbnb.com.br/resources/hosting-homes/t/ceo-updates-35" target="_blank">
+                    Mensagem de Brian Chesky <br>
+                    <span class="subtitulo">Mensagem do nosso CEO</span>
+                </a>
+                <hr>
+                <a href="https://www.airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34" target="_blank">
+                    Recursos para hospedagem <br>
+                    <span class="subtitulo">Como mitigar os efeitos da COVID-19</span>
+                </a>
+                <hr>
+                <a href="https://www.airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34?_ga=2.77194077.994263865.1588689371-193249893.1588689371" target="_blank">
+                    Ofereça acomodações na linha de frente<br>
+                    <span class="subtitulo">Saiba como ajudar</span>
+                </a>
+            </div>
+            <div class='fique-dentro'>
+                <h3>PARA PESSOAS COMBATENDO O COVID-19</h3>
+                <hr>
+                <a href="https://www.airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34?_ga=2.77194077.994263865.1588689371-193249893.1588689371" target="_blank">
+                    Acomodações na linha de frente <br>
+                    <span class="subtitulo">Saiba mais sobre o programa</span>
+                </a>
+                <hr>
+                <a href="https://www.airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34?_ga=2.110110669.994263865.1588689371-193249893.1588689371" target="_blank">
+                    Cadastre-se <br>
+                    <span class="subtitulo">Consulte as opções de acomodação</span>
+                </a>
+                <hr>
+                <a href="https://www.airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34?_ga=2.110110669.994263865.1588689371-193249893.1588689371" target="_blank">
+                    Faça uma doação<br>
+                    <span class="subtitulo">Apoie organizações sem fins lucrativos</span>
+                </a>            
+            </div>
+            <div class='fique-dentro'>
+                <h3>MAIS</h3>
+                <hr>
+                <a href="https://news.airbnb.com/br/?_ga=2.110110669.994263865.1588689371-193249893.1588689371" target="_blank">
+                    Sala de Imprensa do Airbnb<br>
+                    <span class="subtitulo">Ultimas informações</span>
+                </a>
+                <hr>
+                <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">
+                    Organização Mundial da Saúde <br>
+                    <span class="subtitulo">Recomendações e atualizações</span>
+                </a>
+            </div>
+        </div>
+        <div class="rodape">
+            <div class="rodape-sobre">
+                <div class="rodape-titulo">Sobre</div>
+                <div class="conteudo-sobre">
+                    <a href=" " target="_blank">Diversidade e Pertencimento</a><br>
+                    <a href=" " target="_blank">Acessibilidade</a><br>
+                    <a href=" " target="_blank">Confiança e Segurança</a><br>
+                    <a href=" " target="_blank">Airbnb Citizen</a><br>
+                    <a href=" " target="_blank">Newsroom</a><br>
+                </div>
+            </div>
+            <div class="rodape-comunidade">
+                <div class="rodape-titulo">Comunidade</div>
+                <div class="conteudo-comunidade">
+                    <a href=" " target="_blank">Airbnb Magazine</a><br>
+                    <a href=" " target="_blank">Airbnb for Work</a><br>
+                    <a href=" " target="_blank">Convide Amigos</a><br>
+                    <a href=" " target="_blank">Carreiras</a><br>
+                </div>
+            </div>
+            <div class="rodape-anfitriao">
+                <div class="rodape-titulo">Anfitrião</div>
+                <div class="conteudo-anfitriao">
+                    <a href=" " target="_blank">Hospede em sua acomodação</a><br>
+                    <a href=" " target="_blank">Ofereça uma experiência</a><br>
+                    <a href=" " target="_blank">Open Homes</a><br>
+                    <a href=" " target="_blank">Olimpíadas</a><br>
+                    <a href=" " target="_blank">Central de Recursos</a><br>
+                </div>
+            </div>
+            <div class="rodape-atendimento">
+                <div class="rodape-titulo">Atendimento</div>
+                <div class="conteudo-atendimento">
+                    <a href=" " target="_blank">Central de ajuda</a><br>
+                    <a href=" " target="_blank">Atendimento ao Bairro</a><br>
+                </div>
+            </div>
+        </div>
+        <div class="pos-rodape">
+            <div class="pos-rodape-redes-socias">
+                <a href="https://www.facebook.com/AirbnbBrasil" target="_blank"><img src="./imagens/face-airbnb.png"></a>
+                <a href="https://www.instagram.com/airbnb/" target="_blank"><img src="./imagens/insta-airbnb.png"></a>
+                <a href="https://twitter.com/airbnb_br" target="_blank"><img src="./imagens/twitter-airbnb.png"></a>
+            </div>
+            <div class="acg">
+                <div>
+                    <p class="autora">ANA CAROLINA GONÇALVES</p>
+                </div>
+                <div class='feito-por'>
+                    <a href="https://www.instagram.com/acg.acgoncalves/" target="_blank"><img src="./imagens/insta-acg.png"></a>
+                    <a href="https://twitter.com/acg_goncalves" target="_blank"><img src="./imagens/twitter-acg.png"></a>
+                    <a href="https://www.linkedin.com/in/anacarolinagon%C3%A7alves/" target="_blank"><img src="./imagens/linkedIn-acg.png"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5531993822836" target="_blank"><img src="./imagens/whats-acg.png"></a>
+                    <a href="https://github.com/goncalves-ac" target="_blank"><img src="./imagens/github-acg.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    
+    
+    <!-- Código que carrega arquivos JavaScript -->
+    <script src = "vanilla.js"> </script>
+    <script src="./scripts.js"></script>
+    <!-- Código que carrega arquivos JQuery -->
+    <script src="jquery.js"></script>
+    <!-- Código que carrega arquivos MapBox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.0/mapbox-gl.js"></script>
+    <!-- Código que carrega arquivos Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+body {
+    background-color: #EEF5DB;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.15%;
+    margin-right: 0.15%;
+}
+
+.corpo-container{
+    background-color: #EEF5DB;
+    margin: 0;
+}
+
+.link-menu {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #EEF5DB;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navBar {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: #FF385C;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.navBar-logo {
+    width: 20%;
+}
+
+.navBar-logo img {
+    width: 12%;
+}
+
+.navBar-indice {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.busca-form {
+    background-color: #B8D8D8;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.dados-form {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input {
+    background-color: #B8D8D8;
+    border: none;
+    width: 200px;
+    height: 25px;
+}
+
+label {
+    font-weight: bolder;
+}
+
+button {
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    background-color: #FF385C;
+    border: 2px solid #FF385C;
+    border-radius: 10px 10px;
+    box-shadow: 5px 5px 5px #4F6367;
+    font-weight: bolder;
+}
+
+select {
+    background-color: #B8D8D8;
+    border: none;
+}
+
+.Button {
+    width: 170px;
+}
+
+h1 {
+    text-align: center;
+    color: #FF385C;
+}
+
+.experiencias-online {
+    background-color: #B8D8D8;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.titulo-experiencias-online {
+    font-size: 25px;
+}
+
+.texto-experiencias-online {
+    font-weight: bolder;
+    padding-right: 30px;
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.botao {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fique-dentro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.reportagem {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagem-reportagem {
+    width: 100%;
+    border-radius: 5% 5% 0% 0%;
+}
+
+.reportagem-box {
+    border: 3px solid #FF385C;
+    border-radius: 5% 5%;
+    margin: 10px;
+    text-align: center;
+}
+
+.texto-repor {
+    text-align: justify;
+    padding: 10px;
+    color: #4F6367;
+}
+
+.pre-rodape {
+    display: flex;
+    justify-content: space-around;
+}
+
+.subtitulo {
+    color: #7A9E9F;
+}
+
+hr {
+    border: 1px solid #FF385C;
+}
+
+.hr2 {
+    border: 1px solid #FF385C;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    background-color: #B8D8D8;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.rodape-titulo {
+    font-weight: bolder;
+}
+
+.pos-rodape {
+    background-color: #4F6367;
+}
+
+.pos-rodape-redes-socias {
+    display: flex;
+    justify-content: center;
+    background-color: #4F6367;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pos-rodape-redes-socias a {
+    width: 100px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pos-rodape-redes-socias img {
+    width: 50%;
+}
+
+.acg {
+    background-color: #FF385C;
+}
+
+.acg2 {
+    background-color: #FF385C;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.autora {
+    color: #FFF;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.poster {
+    text-align: center;
+}
+
+#foto {
+    border: 5px solid #FF385C;
+    border-radius: 100%;
+    width: 25%;
+}
+
+.conteudo {
+    padding: 20px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+}
+
+.feito-por {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.feito-por a {
+    width: 100px;
+    text-align: center;
+}
+
+.feito-por img {
+    width: 20%;
+}
+
+.resultadoDaBusca {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+
+.dadosLocal {
+    text-align: center;
+    align-items: center;
+}
+
+.dadosLocal img {
+    text-align: center;
+    align-items: center;
+    width: 90%;
+}
+
+.titulo-local {
+    font-size: 40px;
+}
+
+.porPessoa {
+    font-size: 15px;
+}
+
+.preco-local, .local-local {
+    font-size: 25px;
+}
+
+.localFoto {
+    width: 100%;
+    border: 3px solid #FF385C;
+    border-radius: 10px;
+}
+
+.maxBox {
+    text-align: center;
+    align-items: center;
+    
+}
+
+#map {
+    box-sizing: content-box;  
+    width: 92%;
+    height: 500px;
+    padding: 30px;  
+    border: 4px solid #FF385C;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+
+/* 
+#FF385C --> ROSA
+#B8D8D8 --> CINZA CLARO
+#7A9E9F --> CINZA
+#4F6367 --> CINZA ESCURO
+#EEF5DB --> BRANCO CINZA
+*/
+
+@media (max-width: 1000px) {
+    .navBar-indice {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .navBar-logo {
+        text-align: center;
+    }
+    .navBar-logo img {
+        width: 30%;
+    }
+    .resultadoDaBusca {
+        display: flex;
+        flex-direction: column;
+    }
+    .localFoto {
+        width: 100%;
+        border: 2px solid #FF385C;
+    }
+    .classDivTudo {
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo-local {
+        font-size: 25px;
+    }
+    .preco-local, .local-local {
+        font-size: 20px;
+    }
+    .porPessoa {
+        font-size: 20px;
+    }
+    .dadosLocal img {
+        width: 95%;
+    }
+    .Button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 850px) {
+    .dados-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .reportagem {
+        display: flex;
+        flex-direction: column;
+    }
+    .classDivTudo {
+        display: flex;
+        flex-direction: column;
+    }
+    .classDivPai {
+        width: 90%;
+    }
+    .classDivPai {
+        width: 90%;
+    }
+    .titulo-local {
+        font-size: 20px;
+    }
+    .preco-local, .local-local {
+        font-size: 15px;
+    }
+    .porPessoa {
+        font-size: 15px;
+    }
+    .dadosLocal img {
+        width: 100%;
+    }
+    input {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 700px){
+    .navBar, .navBar-indice {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-left: 20px;
+    }
+    .navBar-logo {
+        width: 20%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navBar-logo img {
+        width: 115%;
+    }
+    .experiencias-online, .rodape, .pre-rodape {
+        display: flex;
+        flex-direction: column;
+    }
+    .classDivTudo {
+        display: flex;
+        flex-direction: column;
+    }
+    .classDivPai {
+        width: 90%;
+    }
+    #esconde {
+        opacity: 0;
+        height: 0;
+    }
+}
