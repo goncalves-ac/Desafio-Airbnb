@@ -31,7 +31,7 @@ function numRandon(min, max) {
 }
 
 const options = {
-    url: 'https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72',
+    url: 'https://dry-cliffs-94979.herokuapp.com/',
     type: 'GET',
     dataType: 'json'
 };
